@@ -1,4 +1,4 @@
-function WelcomePage() {
+function HomePage() {
     return (
         <section>
             <div>
@@ -8,4 +8,4 @@ function WelcomePage() {
     )
 }
 
-export default WelcomePage
+export default HomePage

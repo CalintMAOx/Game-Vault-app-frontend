@@ -5,8 +5,9 @@ import {createBrowserRouter, RouterProvider} from "react-router"
 import './index.css'
 
 import App from './App.tsx'
-import WelcomePage from './components/welcome.tsx'
+import HomePage from './components/home.tsx'
 import Top20list from './components/top20.tsx'
+import SettingsPage from "./components/settings.tsx";
 
 const router = createBrowserRouter([
     {
@@ -15,11 +16,15 @@ const router = createBrowserRouter([
         children: [
             {
                 index: true,
-                element: <WelcomePage />,
+                element: <HomePage />,
             },
             {
                 path: "top20",
                 element: <Top20list />,
+            },
+            {
+                path: "settings",
+                element: <SettingsPage />,
             }
         ],
     },
