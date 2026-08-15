@@ -41,7 +41,7 @@ function App() {
 
                 <div
                     data-tauri-drag-region
-                    className="absolute left-1/2 -translate-x-1/2 flex h-full items-center text-orange-400 font-bold"
+                    className="absolute left-1/2 -translate-x-1/2 ring-1 ring-gray-500 bg-gray-800 flex h-full items-center text-yellow-500 font-bold"
                 >
                     GAME VAULT
                 </div>
