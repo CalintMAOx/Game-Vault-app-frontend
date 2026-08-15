@@ -1,6 +1,6 @@
 import './App.css'
-import Top20list from './components/top20.tsx'
 import {SWRConfig} from "swr";
+import {Outlet} from "react-router";
 
 const URL: string = import.meta.env.VITE_SERVER_URL
 
@@ -17,7 +17,9 @@ const globalFetcher = async (path: string) => {
 function App() {
   return (
     <SWRConfig value={{ fetcher: globalFetcher }}>
-      <Top20list />
+      <main>
+          <Outlet />
+      </main>
     </SWRConfig>
   )
 }
